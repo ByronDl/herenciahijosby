@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+@code
+{
+	private void Funcion()
+	{
+		//Instanciar objeto de la clase Padre
+		Padre padre = new Padre();
+		//Instanciar un objeto de la clase HijaA
+		HijaA hijaA = new HijaA();
+		Tio tio = new Tio();
+		Primos primos = new Primos();
+
+		padre.nombre = "Waldemar";
+		padre.apellido = "Ovalle";
+
+		hijaA.nombre = "Ashley";
+		hijaA.apellido = "Jones";
+		hijaA.carne = "202308099";
+	}
+}
